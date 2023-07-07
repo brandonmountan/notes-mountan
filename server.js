@@ -34,7 +34,7 @@ app.post('/api/notes', (req, res) => {
             id: uuid.v4()
         };
     
-        fs.readFile(`./db/db.json`, 'utf8', (err, data) => {
+        fs.readFile('./db/db.json', 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
             } else {
